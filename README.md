@@ -1,24 +1,24 @@
 <div align="center" id="top"> 
   
 <h1 align="center">Licznik</h1>
-  <a target="_blank" href="https://sevetoo.github.io/Counter/">
+  <a target="_blank" href="https://sevetoo.github.io/Counter2/">
   <img src="./preview.png" alt="Licznik" />
   </a>
 
 &#xa0;
 
-<a target="_blank" href="https://sevetoo.github.io/Counter/">Demo</a>
+<a target="_blank" href="https://sevetoo.github.io/Counter2/">Demo</a>
 
 </div>
 
 <p align="center">
-  <img alt="Github top language" src="https://img.shields.io/github/languages/top/SeveToo/Counter?color=56BEB8">
+  <img alt="Github top language" src="https://img.shields.io/github/languages/top/SeveToo/Counter2?color=56BEB8">
 
-  <img alt="Github language count" src="https://img.shields.io/github/languages/count/SeveToo/Counter?color=56BEB8">
+  <img alt="Github language count" src="https://img.shields.io/github/languages/count/SeveToo/Counter2?color=56BEB8">
 
-  <img alt="Repository size" src="https://img.shields.io/github/repo-size/SeveToo/Counter?color=56BEB8">
+  <img alt="Repository size" src="https://img.shields.io/github/repo-size/SeveToo/Counter2?color=56BEB8">
 
-  <img alt="License" src="https://img.shields.io/github/license/SeveToo/Counter?color=56BEB8">
+  <img alt="License" src="https://img.shields.io/github/license/SeveToo/Counter2?color=56BEB8">
 </p>
 
 <p align="center">
@@ -53,12 +53,12 @@ The following tools were used in this project:
 ## :white_check_mark: Requirements
 
 You just need a browser.
-https://sevetoo.github.io/Counter/
+https://sevetoo.github.io/Counter2/
 
 ## :checkered_flag: Starting
 
 download the project and open **index.html**
-or open in browser ( <a href="https://sevetoo.github.io/Counter/" >click link</a> )
+or open in browser ( <a href="https://sevetoo.github.io/Counter2/" >click link</a> )
 
 ## 😎 Made by
 
