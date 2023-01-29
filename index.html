@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MyTheme</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/f413087f9d.js"
+      crossorigin="anonymous"></script>
+    <!-- https://fontawesome.com/v5.15/icons?d=gallery&p=2 -->
+  </head>
+  <body>
+    <header class="header">
+      <div class="logo">
+        <div class="logo__text">Liczydełko</div>
+      </div>
+      <nav class="nav"><i class="fas fa-bars"></i></nav>
+    </header>
+    <div class="wrapper">
+      <div class="App">
+        <!-- Input View -->
+        <div id="output__view" class="App__input_view">
+          <div class="form">
+            <div class="input">
+              <div class="input__controller">
+                <label for="shift" class="input__label_title">Wybierz Przesunięcie</label>
+                <input checked type="checkbox" id="lock1" class="input__lock_checkbox" />
+                <label for="lock1" class="input__lock_btn"></label>
+              </div>
+              <div class="input__fields">
+                <label
+                  for="shift"
+                  class="shiftDaysLabel input_description input_description-locked"
+                  >+ Dni</label
+                >
+                <input
+                  type="number"
+                  id="shift"
+                  class="shiftDaysInput input__field_value input__field_value-locked"
+                  value="280"
+                  disabled />
+              </div>
+            </div>
+          </div>
+          <div class="form">
+            <div class="input">
+              <div class="input__controller">
+                <label for="shift" class="input__label_title">Dni Sąsiednie</label>
+                <input checked type="checkbox" id="lock2" class="input__lock_checkbox" />
+                <label for="lock2" class="input__lock_btn"></label>
+              </div>
+              <div class="input__fields">
+                <label
+                  for="shift"
+                  class="rangeDaysLabel input_description input_description-locked"
+                  >+/- Dni</label
+                >
+                <input
+                  type="number"
+                  id="shift"
+                  class="rangeDaysInput input__field_value input__field_value-locked"
+                  value="14"
+                  disabled />
+              </div>
+            </div>
+          </div>
+          <div class="form">
+            <div class="input">
+              <div class="input__controller">
+                <label for="day" class="input__label_title"
+                  >Wybierz datę początkową</label
+                >
+                <div class="today app__button_small">dziś</div>
+              </div>
+              <div class="input__fields">
+                <label for="day" class="input_description">Dzień</label>
+                <input
+                  type="number"
+                  id="day"
+                  class="input__field_value"
+                  placeholder="22"
+                  min="1"
+                  max="31" />
+              </div>
+            </div>
+            <div class="input">
+              <div class="input__fields">
+                <label for="month" class="input_description">Miesiąc</label>
+                <input
+                  type="number"
+                  id="month"
+                  class="input__field_value"
+                  placeholder="01"
+                  min="1"
+                  max="12" />
+              </div>
+            </div>
+            <div class="input">
+              <div class="input__fields">
+                <label for="year" class="input_description">Rok</label>
+                <input
+                  type="number"
+                  id="year"
+                  class="input__field_value"
+                  placeholder="2022" />
+              </div>
+            </div>
+          </div>
+          <a href="#App__output">
+            <button class="app__button">Zatwierdź</button>
+          </a>
+        </div>
+        <!-- Output View -->
+        <div id="App__output" class="App__input_view">
+          <div class="output">
+            <div class="output__title">Orginalna Data</div>
+            <div class="output__fields">
+              <span class="output__desc">Data</span>
+              <span class="output__value orginal__date">01.01.2022</span>
+            </div>
+          </div>
+          <div class="output output-spacial">
+            <div class="output__title">Data Szukana</div>
+            <div class="output__fields">
+              <span class="output__desc">+ <span class="shift"></span> Dni</span>
+              <span class="output__value new__date">01.01.2022</span>
+            </div>
+          </div>
+          <div class="output">
+            <div class="output__title">Daty sąsiednie</div>
+            <div class="output__fields">
+              <span class="output__desc">- <span class="range">10</span> Dni</span>
+              <span class="output__value new__dateMinus">01.01.2022</span>
+            </div>
+            <div class="output__fields">
+              <span class="output__desc">+ <span class="range">10</span> Dni</span>
+              <span class="output__value new__datePlus">01.01.2022</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="lock.js"></script>
+    <script src="today.js"></script>
+    <script src="setDate.js"></script>
+    <!-- <script src="script.js"></script> -->
+  </body>
+</html>
